@@ -95,7 +95,7 @@
             <iframe 
               src="https://www.youtube.com/embed/MBQtjAR9DGk" 
               title="Kampanye Digital WOM Finance" 
-              referrerpolicy="strict-origin-when-cross-origin" 
+              frameborder="0"
               allowfullscreen>
             </iframe>
           </div>
@@ -136,7 +136,7 @@
           <h3>Palagan Lintang (Game AR 3D)</h3>
           <div class="video-frame">
             <iframe 
-              src="https://www.youtube.com/embed/VIDEO_ID_3" 
+              src="https://www.youtube.com/embed/MkZlfp6g_BM" 
               title="Neo Runner: Pixel Escape" 
               frameborder="0" 
               allowfullscreen>
@@ -182,21 +182,71 @@
     </div>
   </section>
 
-  <!-- Additional Visual Works -->
-  <section id="extras" class="section section-alt">
+<section id="extras" class="section section-alt">
   <div class="container">
-    <h2 class="section-title">Galeri Visual & Eksperimen</h2>
+    <h2 class="section-title">Photography</h2>
     <p class="contact-intro">
-      Beberapa karya visual, eksplorasi desain, dan aset grafis yang pernah saya kerjakan.
-      Klik gambar untuk melihat versi ukuran besar.
+      Beberapa Photography, baik itu merupakan potrait ataupun landscape yang pernah saya ambil.
+      Klik gambar untuk melihat versi ukuran besar. Geser slider untuk melihat foto lainnya.
     </p>
 
-    <div class="gallery-grid">
-      <img src="img/gallery1.jpg" class="gallery-item" alt="Karya 1">
-      <img src="img/gallery2.jpg" class="gallery-item" alt="Karya 2">
-      <img src="img/gallery3.jpg" class="gallery-item" alt="Karya 3">
-      <img src="img/gallery4.jpg" class="gallery-item" alt="Karya 4">
-      <!-- Tambahkan lagi jika mau -->
+    <div class="gallery-slider">
+      <button class="gallery-nav gallery-nav-prev" aria-label="Sebelumnya">‹</button>
+
+      <div class="gallery-track-wrapper">
+        <div class="gallery-track">
+          <!-- Slide 1 -->
+          <div class="gallery-slide active">
+            <img src="gambar/IMG_4880.jpg" class="gallery-item" alt="Foto 1">
+            <img src="gambar/IMG_4786-2.jpg" class="gallery-item" alt="Foto 2">
+            <img src="gambar/IMG_4661.jpg" class="gallery-item" alt="Foto 3">
+            <img src="gambar/IMG_4556.jpg" class="gallery-item" alt="Foto 4">
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="gallery-slide">
+            <img src="gambar/tugujogja.jpg" class="gallery-item" alt="Foto 5">
+            <img src="gambar/Sumbing Sindoro.jpg" class="gallery-item" alt="Foto 6">
+            <img src="gambar/Candi Arjuna.jpg" class="gallery-item" alt="Foto 7">
+            <img src="gambar/Candi Ratu Boko.jpg" class="gallery-item" alt="Foto 8">
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="gallery-slide">
+            <img src="gambar/turki1.JPG" class="gallery-item" alt="Foto 9">
+            <img src="gambar/JogjaPagiHariq.jpg" class="gallery-item" alt="Foto 10">
+            <img src="gambar/Ebem (1 of 1).jpg" class="gallery-item" alt="Foto 11">
+            <img src="gambar/Jimny.jpg" class="gallery-item" alt="Foto 12">
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="gallery-slide">
+            <img src="img/gallery13.jpg" class="gallery-item" alt="Foto 13">
+            <img src="img/gallery14.jpg" class="gallery-item" alt="Foto 14">
+            <img src="img/gallery15.jpg" class="gallery-item" alt="Foto 15">
+            <img src="img/gallery16.jpg" class="gallery-item" alt="Foto 16">
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="gallery-slide">
+            <img src="img/gallery17.jpg" class="gallery-item" alt="Karya 17">
+            <img src="img/gallery18.jpg" class="gallery-item" alt="Karya 18">
+            <img src="img/gallery19.jpg" class="gallery-item" alt="Karya 19">
+            <img src="img/gallery20.jpg" class="gallery-item" alt="Karya 20">
+          </div>
+        </div>
+      </div>
+
+      <button class="gallery-nav gallery-nav-next" aria-label="Berikutnya">›</button>
+    </div>
+
+    <!-- Dots / indikator slide -->
+    <div class="gallery-dots">
+      <button class="gallery-dot active" data-slide="0"></button>
+      <button class="gallery-dot" data-slide="1"></button>
+      <button class="gallery-dot" data-slide="2"></button>
+      <button class="gallery-dot" data-slide="3"></button>
+      <button class="gallery-dot" data-slide="4"></button>
     </div>
   </div>
 
@@ -206,6 +256,7 @@
     <img id="lightbox-img" class="lightbox-img">
   </div>
 </section>
+
 
 
   <!-- Call to Action -->
@@ -225,4 +276,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
