@@ -603,3 +603,18 @@ body {
     object-fit: cover;
     background: #020617; /* background foto */
 }
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.video-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 0.8rem;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.7);
+}
