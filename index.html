@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Muhammad Rafif Bariq</title>
+  <meta name="description" content="Portfolio pribadi Muhammad Rafif Bariq - Electrical Engineer, Programmer, dan Motion Graphic Designer." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="#hero">MRB<span>.</span></a>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#skills">Keahlian</a></li>
+          <li><a href="#experience">Pengalaman</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="hero-greeting">Halo, saya</p>
+        <h1 class="hero-title">Muhammad Rafif Bariq</h1>
+        <p class="hero-subtitle">
+          Electrical Engineer · Programmer · Motion Graphic Designer
+        </p>
+        <p class="hero-desc">
+          Lulusan Magister Teknik Elektro dengan konsentrasi Media Digital & Teknologi Game.  
+          Berpengalaman sebagai <strong>Programmer</strong> dan <strong>Motion Graphic Animator</strong>, 
+          menggabungkan rekayasa teknologi, desain visual, dan kreativitas digital.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">Lihat Project</a>
+          <a href="#contact" class="btn-secondary">Hubungi Saya</a>
+        </div>
+        <div class="hero-tags">
+          <span>Web & App Development</span>
+          <span>FPGA & Embedded</span>
+          <span>Motion Graphics</span>
+          <span>Game & Media Digital</span>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="profile-photo-wrapper">
+        <!-- Ganti dengan foto kamu sendiri -->
+            <img src="img/3x4 putih resize.jpg" alt="Foto Muhammad Rafif Bariq" class="profile-photo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">Tentang Saya</h2>
+      <div class="about-grid">
+        <div>
+          <p>
+            Saya adalah seorang <strong>Engineer</strong> dengan latar belakang 
+            <strong>Magister Teknik Elektro</strong> (fokus Media Digital & Teknologi Game), 
+            yang tertarik pada integrasi antara <strong>teknologi, visual, dan user experience</strong>.
+          </p>
+          <p>
+            Pengalaman saya mencakup pengembangan sistem, pembuatan motion graphic untuk kebutuhan korporat, 
+            eksperimen dengan <strong>FPGA, IoT, dan kontrol visual</strong>, hingga pengembangan prototipe interaktif 
+            untuk kebutuhan edukasi dan industri kreatif.
+          </p>
+        </div>
+        <div class="about-cards">
+          <div class="about-card">
+            <h3>Pendidikan</h3>
+            <p><strong>Magister Teknik Elektro</strong></p>
+            <p>Fokus: Media Digital & Teknologi Game</p>
+          </div>
+          <div class="about-card">
+            <h3>Fokus Utama</h3>
+            <ul>
+              <li>Media Digital & Game Technology</li>
+              <li>Web & Software Development</li>
+              <li>Motion Graphic & Visual Storytelling</li>
+            </ul>
+          </div>
+          <div class="about-card">
+            <h3>Nilai Tambah</h3>
+            <ul>
+              <li>Berpikir sistematis & analitis</li>
+              <li>Mampu bridging tim teknis & kreatif</li>
+              <li>Terbiasa bekerja dengan deadline dan brief klien</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Keahlian</h2>
+      <div class="skills-grid">
+        <div class="skill-column">
+          <h3>Teknis</h3>
+          <ul>
+            <li>Web Development (HTML, CSS, JavaScript)</li>
+            <li>Backend dasar (PHP / Laravel, REST API)</li>
+            <li>Embedded & IoT (Arduino, Raspberry Pi)</li>
+            <li>FPGA & Digital Design (VHDL/Verilog)</li>
+            <li>Data & Visualisation (Excel, dasar Python/BI)</li>
+          </ul>
+        </div>
+        <div class="skill-column">
+          <h3>Kreatif</h3>
+          <ul>
+            <li>Motion Graphic & Animation</li>
+            <li>Storyboarding & Visual Storytelling</li>
+            <li>UI/UX dasar untuk aplikasi & website</li>
+            <li>Video Editing & Compositing</li>
+            <li>Content untuk media sosial</li>
+          </ul>
+        </div>
+        <div class="skill-column">
+          <h3>Tools</h3>
+          <ul>
+            <li>Adobe After Effects, Premiere Pro</li>
+            <li>Blender 3D (dasar modeling & render)</li>
+            <li>Visual Studio Code, Git & GitHub</li>
+            <li>Quartus, ModelSim</li>
+            <li>Figma / UI tools</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Pengalaman</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Programmer – Wei Tech</h3>
+            <span class="timeline-period">2023 – 2025</span>
+            <p>
+              Mengembangkan aplikasi internal dan sistem berbasis web, 
+              melakukan integrasi API, maintenance fitur, dan membantu klien 
+              menerjemahkan kebutuhan bisnis menjadi solusi digital yang fungsional.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Junior Motion Graphic Animator – WOM Finance</h3>
+            <span class="timeline-period">2021 – 2022</span>
+            <p>
+              Membuat konten motion graphic untuk kebutuhan kampanye digital, 
+              sosial media, dan materi internal perusahaan. 
+              Berkolaborasi dengan tim marketing untuk memastikan pesan visual tepat sasaran.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Project & Riset Akademik</h3>
+            <span class="timeline-period">Selama Studi Magister</span>
+            <p>
+              Terlibat dalam berbagai project seperti kontrol visual 
+              kendaraan bawah air mini, pemodelan sistem digital berbasis FPGA, 
+              dan pengembangan prototipe aplikasi edukatif dan media interaktif.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Project Terpilih</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Visual Control Mini Underwater Vehicle</h3>
+          <p>
+            Riset dan pengembangan sistem kontrol visual untuk kendaraan bawah air mini 
+            yang digunakan pada lingkungan akuakultur / pemantauan objek bawah air. 
+            Menggabungkan computer vision, sensor, dan kontrol manual/terbimbing.
+          </p>
+          <p class="project-tags">
+            <span>Computer Vision</span><span>Embedded</span><span>Riset</span>
+          </p>
+          <!-- Ganti # dengan link GitHub/Video -->
+          <a href="#" class="project-link">Detail</a>
+        </article>
+
+        <article class="project-card">
+          <h3>FPGA Digital Dice</h3>
+          <p>
+            Implementasi digital dice pada FPGA (Cyclone V) menggunakan VHDL/Verilog. 
+            Meliputi perancangan logika, pin planning, simulasi di ModelSim, dan pengujian pada hardware.
+          </p>
+          <p class="project-tags">
+            <span>FPGA</span><span>VHDL/Verilog</span><span>Digital Design</span>
+          </p>
+          <a href="#" class="project-link">Dokumentasi</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Motion Graphic Campaign – WOM Finance</h3>
+          <p>
+            Pembuatan beberapa paket konten motion graphic untuk kampanye digital, 
+            sosialisasi produk, dan edukasi pelanggan. Fokus pada visual yang bersih, 
+            mudah dipahami, dan selaras dengan brand guideline perusahaan.
+          </p>
+          <p class="project-tags">
+            <span>Motion Graphic</span><span>After Effects</span><span>Branding</span>
+          </p>
+          <a href="#" class="project-link">Showreel / Portfolio Video</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Aplikasi Web Internal – Wei Tech</h3>
+          <p>
+            Pengembangan aplikasi internal untuk mendukung operasional klien, 
+            termasuk dashboard monitoring dan manajemen data. 
+            Menggunakan stack web modern dengan fokus pada kemudahan penggunaan.
+          </p>
+          <p class="project-tags">
+            <span>Web App</span><span>Backend</span><span>Dashboard</span>
+          </p>
+          <a href="#" class="project-link">Demo</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Kontak</h2>
+      <p class="contact-intro">
+        Tertarik bekerja sama, berdiskusi project, atau sekadar networking?  
+        Silakan hubungi saya melalui salah satu kanal di bawah ini.
+      </p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:rafifbariq@gmail.com">rafifbariq@gmail.com</a></li>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/6285883154140" target="_blank">+62 858-8315-4140</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rafifebem" target="_blank">linkedin.com/in/rafifebem</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/RafifEbem" target="_blank">github.com/RafifEbem</a></li>
+          </ul>
+        </div>
+        <form class="contact-form" onsubmit="return false;">
+          <div class="form-group">
+            <label for="name">Nama</label>
+            <input type="text" id="name" placeholder="Nama Anda" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="email@contoh.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" rows="4" placeholder="Tuliskan pesan Anda..." required></textarea>
+          </div>
+          <button class="btn-primary" type="submit">Kirim</button>
+          <p class="form-note">
+            *Form ini hanya mockup di versi statis. Untuk membuatnya benar-benar terkirim, 
+            bisa dihubungkan ke layanan email API (misal: Formspree, EmailJS, dsb).
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Muhammad Rafif Bariq. All rights reserved.</p>
+      <p class="footer-small">Dibuat dengan HTML, CSS, dan JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
