@@ -99,3 +99,41 @@ if (lightbox) {
     }
   });
 }
+
+// --- Handle contact form with Formspree (optional AJAX) ---
+
+const contactForm = document.querySelector(".contact-form");
+const formStatus = document.getElementById("form-status");
+
+if (contactForm && formStatus) {
+  contactForm.addEventListener("submit", async (e) => {
+    e.preventDefault(); // cegah reload default
+
+    const data = new FormData(contactForm);
+
+    formStatus.textContent = "Mengirim...";
+    formStatus.style.color = "#e5e7eb";
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: contactForm.method,
+        body: data,
+        headers: {
+          "Accept": "application/json"
+        }
+      });
+
+      if (response.ok) {
+        formStatus.textContent = "Terima kasih! Pesan Anda sudah terkirim.";
+        formStatus.style.color = "#4ade80";
+        contactForm.reset();
+      } else {
+        formStatus.textContent = "Terjadi kesalahan. Coba lagi nanti.";
+        formStatus.style.color = "#f97373";
+      }
+    } catch (error) {
+      formStatus.textContent = "Tidak bisa terhubung ke server. Cek koneksi internet.";
+      formStatus.style.color = "#f97373";
+    }
+  });
+}
