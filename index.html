@@ -275,24 +275,28 @@
             <li><strong>GitHub:</strong> <a href="https://github.com/RafifEbem" target="_blank">github.com/RafifEbem</a></li>
           </ul>
         </div>
-        <form class="contact-form" onsubmit="return false;">
+        <form class="contact-form"
+              action="https://formspree.io/f/mdkjnaoa"  <!-- ganti dengan URL punyamu -->
+              method="POST">
           <div class="form-group">
             <label for="name">Nama</label>
-            <input type="text" id="name" placeholder="Nama Anda" required />
+            <input type="text" id="name" name="name" placeholder="Nama Anda" required />
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="email@contoh.com" required />
+            <input type="email" id="email" name="email" placeholder="email@contoh.com" required />
           </div>
           <div class="form-group">
             <label for="message">Pesan</label>
-            <textarea id="message" rows="4" placeholder="Tuliskan pesan Anda..." required></textarea>
+            <textarea id="message" name="message" rows="4" placeholder="Tuliskan pesan Anda..." required></textarea>
           </div>
           <button class="btn-primary" type="submit">Kirim</button>
           <p class="form-note">
-           
+            *Form ini menggunakan Formspree untuk mengirim email ke saya.
           </p>
         </form>
+        <p id="form-status" class="form-note"></p>
+
       </div>
     </div>
   </section>
